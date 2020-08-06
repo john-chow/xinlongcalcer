@@ -1,0 +1,19 @@
+<!--pages/result.wxml-->
+<view>
+  <template name="resultList">
+    <view class="detail-item">毛料<text class="num">{{maoliao}}</text></view>
+    <view class="detail-item">染厂<text class="num">{{ranchang}}</text></view>
+    <view class="detail-item">织机<text class="num">{{zhiji}}</text></view>
+    <view class="detail-item">后整<text class="num">{{houzheng}}</text></view>
+    <view class="detail-item">缝盘<text class="num">{{fengpan}}</text></view>
+    <view class="detail-item">辅料<text class="num">{{fuliao}}</text></view>
+  </template>
+  <view wx:if="{{cat==='baipi'}}" class="result-details">
+    <template is="resultList" data="{{...baipi}}"></template>
+  </view>
+  <view wx:else class="result-details">
+    <template is="resultList" data="{{...sesha}}"></template>
+  </view>
+  <view wx:if="{{cat==='baipi'}}" class="result-total">成本<text class="num">{{baipi.chengben}}</text>元</view>
+  <view wx:else class="result-total">成本<text class="num">{{sesha.chengben}}</text>元</view>
+</view>

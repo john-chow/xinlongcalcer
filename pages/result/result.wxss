@@ -1,0 +1,32 @@
+/* pages/result.wxss */
+
+.result-details {
+  display: flex;
+  flex-flow: row wrap;
+  background: #F7F7F7;
+}
+
+.result-details .detail-item {
+  width: 50%;
+  padding: 20rpx 40rpx;
+  box-sizing: border-box;
+}
+
+.result-details .detail-item .num {
+  color: orange;
+  margin-left: 50rpx;
+}
+
+.result-total {
+  font-size: large;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-top: 120rpx;
+}
+
+.result-total .num {
+  color: orange;
+  margin-left: 50rpx;
+  margin-right: 20prx;
+}

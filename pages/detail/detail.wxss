@@ -1,0 +1,43 @@
+/* pages/detail/detail.wxss */
+
+.item-a {
+  width: 100%;  
+  padding: 10rpx 0rpx;
+  box-sizing: border-box; 
+  height: 150rpx;
+}
+.item-a .item-a-title {
+  font-weight: bold;
+}
+.item-a .two-cell {
+  display: flex; 
+  flex-grow: row no-wrap;
+  justify-content: space-between; 
+  align-items: center;
+}
+.item-a.one-cell {
+}
+.item-a .two-cell input,
+.item-a .one-cell input {
+  background: #ffffff;
+  height: 75rpx;
+}
+.item-a .two-cell .cell-left {
+  margin-right: 20rpx;
+}
+.item-a .two-cell .cell-right {
+  margin-left: 20rpx;
+}
+.item-operation {
+  margin-top: 50rpx;
+  margin-bottom: 80rpx;
+  height: 120rpx;
+}
+
+.scoll-h{
+  height: 100%;
+  background: #F7F7F7;
+}
+.scoll-h button {
+  background: green;
+}

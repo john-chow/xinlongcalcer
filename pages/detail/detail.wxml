@@ -1,0 +1,50 @@
+<!--pages/detail/detail.wxml-->
+              <scroll-view scroll-y="true" class="scoll-h" >
+                  <view class="item-a">
+                    <view class="item-a-title">版衣数据</view>
+                    <view class="two-cell">
+                      <input model:value="{{banyiWeight}}" type="digit" class="cell-left" placeholder="重量(g)"></input>
+                      <input model:value="{{costTime}}" type="number"  class="cell-right" placeholder="时间(分钟)"></input>
+                    </view>
+                  </view>
+                  <view class="item-a">
+                    <text class="item-a-title">毛料(元/吨)</text>
+                    <view class="one-cell">
+                      <input model:value="{{maoliaoUnit}}" type="digit" placeholder="请输入"></input>
+                    </view>
+                  </view>
+                  <view class="item-a">
+                    <text class="item-a-title">织机(元/天)</text>
+                    <view class="one-cell">
+                      <input model:value="{{zhijiUnit}}" type="digit" placeholder="请输入"></input>
+                    </view>
+                  </view>
+                  <view class="item-a">
+                    <text class="item-a-title">缝盘(元/打)</text>
+                    <view class="one-cell">
+                      <input model:value="{{fengpanUnit}}" type="digit" placeholder="请输入"></input>
+                    </view>
+                  </view>
+                  <view class="item-a">
+                    <text class="item-a-title">染厂(元/磅)</text>
+                    <view class="one-cell">
+                      <input model:value="{{ranchangUnit}}" type="digit" placeholder="请输入"></input>
+                    </view>
+                  </view>
+                  <view class="item-a">
+                    <text class="item-a-title">后整(元/件)</text>
+                    <view class="one-cell">
+                      <input model:value="{{houzhengUnit}}" type="digit" placeholder="请输入"></input>
+                    </view>
+                  </view>
+                  <view class="item-a">
+                    <text class="item-a-title">辅料(元/件)</text>
+                    <view class="one-cell">
+                      <input model:value="{{fuliaoUnit}}" type="digit" placeholder="请输入"></input>
+                    </view>
+                  </view>
+                  <view class="item-operation">
+                    <button wx:if="{{cat==='maopi'}}" bindtap="caculateMaopi">计算</button>
+                    <button wx:else bindtap="caculateSesha">计算</button>
+                  </view>
+            </scroll-view>
