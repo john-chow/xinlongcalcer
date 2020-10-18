@@ -81,6 +81,19 @@ Component({
       app.globalData.cat = 'sesha';
       this.jumpResult();
     },
+    reset: function() {
+      let f = function() {};
+      this.setData({
+        'banyiWeight': f,
+        'costTime': f,
+        'maoliaoUnit': f,
+        'zhijiUnit': f,
+        'fengpanUnit': f,
+        'ranchangUnit': f,
+        'houzhengUnit': f,
+        'fuliaoUnit': f
+      });
+    },
     jumpResult: function() {
       wx.navigateTo({
         url: '../result/result'

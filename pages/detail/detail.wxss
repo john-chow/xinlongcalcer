@@ -2,7 +2,7 @@
 
 .item-a {
   width: 100%;  
-  padding: 10rpx 0rpx;
+  padding: 10rpx 16rpx;
   box-sizing: border-box; 
   height: 150rpx;
 }
@@ -32,6 +32,17 @@
   margin-top: 50rpx;
   margin-bottom: 80rpx;
   height: 120rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item-operation button {
+  width: 270rpx;
+}
+.item-operation button.cancel {
+  background-color: gray;
 }
 
 .scoll-h{

@@ -44,6 +44,7 @@
                     </view>
                   </view>
                   <view class="item-operation">
+                    <button class="cancel" bindtap="reset">重置</button>
                     <button wx:if="{{cat==='maopi'}}" bindtap="caculateMaopi">计算</button>
                     <button wx:else bindtap="caculateSesha">计算</button>
                   </view>
